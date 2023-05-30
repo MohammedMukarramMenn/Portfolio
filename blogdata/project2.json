@@ -1,0 +1,18 @@
+{
+    "title": "Chatbot",
+    "projectOverview": "The project involved creating a user-friendly chatbot for a pharmaceutical company. The main goal was to develop a chatbot that could easily interact with the user and facilitate appointment bookings. The chatbot aimed to improve the user experience and streamline interactions with the pharmaceutical company..",
+    "keyFeaturesAndAchievements": [
+        "Understanding Requirements: Through thorough discussions with the client, we defined the chatbot's functionalities, such as capturing user details and implementing an appointment booking system.",
+        "User-Friendly Design: Utilizing React, we created a visually appealing and responsive interface that made it easy for users to interact with the chatbot.",
+        "Thorough Testing: We conducted comprehensive testing, including checking individual components, ensuring different parts worked well together, and validating user acceptance. Continuous integration and deployment helped automate these processes, ensuring a reliable chatbot."
+    ],
+    "impact": "The chatbot provided a convenient way for users to interact with the pharmaceutical company. The intuitive interface and intelligent responses improved overall user satisfaction. The chatbot automated the capture of user details and responded to queries promptly. This reduced the workload on customer service personnel, allowing them to focus on more complex inquiries and provide personalized assistance.",
+    "conclusion": "Building an efficient chatbot for a pharmaceutical company was an exciting project. I successfully created a user-friendly chatbot that captured user information and facilitated appointment bookings seamlessly. This project showcases my technical skills, understanding of client requirements, and ability to develop innovative software solutions in the healthcare industry.",
+    "contactInformation": "If you would like more information about this project or discuss how I can contribute to your software development needs, please feel free to reach out. I am eager to help you achieve your goals and create efficient solutions for your clients.",
+    "author": "Mukarram",
+    "image1": "/images/PROJECT_2_1.jpg",
+    "image2": "/images/PROJECT_2_2.jpg",
+    "image3": "/images/PROJECT_2_3.jpg",
+    "image4": "/images/PROJECT_2_4.jpg",
+    "image5": "/images/PROJECT_2_5.jpg"
+}
