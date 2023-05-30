@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./Blog.module.css";
 import Carousel from "../../components/Carousel/Carousel";
+import { Layout } from "../layout/Layout";
 
 const Blog = () => {
   const router = useRouter();
@@ -31,57 +32,61 @@ const Blog = () => {
   }, [slug]);
 
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        {blog ? (
-          <>
-            <h1>{blog.title}</h1>
-            {carouselImages.length > 0 && <Carousel images={carouselImages} />}
-            <br />
-            <h2>Project Overview:</h2>
-            <p>{blog.projectOverview}</p>
-            <br />
-            <h2>Key Features and Achievements:</h2>
-            <ul>
-              {blog.keyFeaturesAndAchievements &&
-              blog.keyFeaturesAndAchievements.length > 0 ? (
-                <ul>
-                  {blog.keyFeaturesAndAchievements.map((feature, index) => {
-                    const colonIndex = feature.indexOf(":");
-                    const boldText = feature.slice(0, colonIndex + 1);
-                    const remainingText = feature.slice(colonIndex + 1);
-
-                    return (
-                      <>
-                        <li key={index}>
-                          <span>
-                            <strong>{boldText}</strong>
-                            {remainingText}
-                          </span>
-                        </li>
-                        <br />
-                      </>
-                    );
-                  })}
-                </ul>
-              ) : (
-                <p>No key features and achievements found.</p>
+    <Layout>
+      <div className={styles.container}>
+        <main className={styles.main}>
+          {blog ? (
+            <>
+              <h1>{blog.title}</h1>
+              {carouselImages.length > 0 && (
+                <Carousel images={carouselImages} />
               )}
-            </ul>
-            {/* <br />
+              <br />
+              <h2>Project Overview:</h2>
+              <p>{blog.projectOverview}</p>
+              <br />
+              <h2>Key Features and Achievements:</h2>
+              <ul>
+                {blog.keyFeaturesAndAchievements &&
+                blog.keyFeaturesAndAchievements.length > 0 ? (
+                  <ul>
+                    {blog.keyFeaturesAndAchievements.map((feature, index) => {
+                      const colonIndex = feature.indexOf(":");
+                      const boldText = feature.slice(0, colonIndex + 1);
+                      const remainingText = feature.slice(colonIndex + 1);
+
+                      return (
+                        <>
+                          <li key={index}>
+                            <span>
+                              <strong>{boldText}</strong>
+                              {remainingText}
+                            </span>
+                          </li>
+                          <br />
+                        </>
+                      );
+                    })}
+                  </ul>
+                ) : (
+                  <p>No key features and achievements found.</p>
+                )}
+              </ul>
+              {/* <br />
             <h2>Impact:</h2>
             <p>{blog.impact}</p> */}
-            <br />
-            <h2>Conclusion:</h2>
-            <p>{blog.conclusion}</p>
-            <br />
-            <p>Author: {blog.author}</p>
-          </>
-        ) : (
-          <p>Loading...</p>
-        )}
-      </main>
-    </div>
+              <br />
+              <h2>Conclusion:</h2>
+              <p>{blog.conclusion}</p>
+              <br />
+              <p>Author: {blog.author}</p>
+            </>
+          ) : (
+            <p>Loading...</p>
+          )}
+        </main>
+      </div>
+    </Layout>
   );
 };
 
