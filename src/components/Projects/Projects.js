@@ -48,7 +48,7 @@ const Projects = () => {
               </div>
               <UtilityList>
                 <ExternalLinks href={p.source}>
-                  <a onClick={() => router.push(p.source)}>View More</a>
+                  View More
                 </ExternalLinks>
               </UtilityList>
             </BlogCard>
