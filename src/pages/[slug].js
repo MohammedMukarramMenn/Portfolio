@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./Blog.module.css";
-import Carousel from "../../components/Carousel/Carousel";
-import { Layout } from "../../layout/Layout";
+import Carousel from "../components/Carousel/Carousel";
+import { Layout } from "../layout/Layout";
 
 const Blog = () => {
   const router = useRouter();
@@ -13,7 +13,7 @@ const Blog = () => {
 
   useEffect(() => {
     if (slug) {
-      fetch(`http://localhost:3000/api/blogs?slug=${slug}`)
+      fetch(`${process.env.API_URL}/api/blogs?slug=${slug}`)
         .then((response) => response.json())
         .then((parsed) => {
           setBlog(parsed);
