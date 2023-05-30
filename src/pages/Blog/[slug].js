@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./Blog.module.css";
 import Carousel from "../../components/Carousel/Carousel";
-import { Layout } from "../layout/Layout";
+import { Layout } from "../../layout/Layout";
 
 const Blog = () => {
   const router = useRouter();
