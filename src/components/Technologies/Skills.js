@@ -8,7 +8,7 @@ import {
   SiNodedotjs,
   SiReact,
   SiLinux,
-  SiNextdotjs
+  SiNextdotjs,
 } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 import { TbBrandKotlin } from "react-icons/tb";
@@ -50,45 +50,25 @@ export const Skills = [
     slug: "node",
     Component: SiNodedotjs,
     title: "Node.js",
-    Description: () => (
-      <>
-        Powerful server-side JavaScript runtime environment for building
-        scalable and efficient web applications
-      </>
-    ),
+    Description: () => <>Back-End code for Business Logic</>,
   },
 
   {
     slug: "react",
     Component: SiReact,
     title: "React",
-    Description: () => (
-      <>
-        JS library for enabling the creation of interactive and dynamic web
-        applications
-      </>
-    ),
+    Description: () => <>Interactive and dynamic UI/UX</>,
   },
   {
     slug: "nextjs",
     Component: SiNextdotjs,
     title: "Next.js",
-    Description: () => (
-      <>
-        A powerful React framework for building server-side rendered and static
-        websites with ease, offering enhanced performance and seamless routing
-      </>
-    ),
+    Description: () => <>React framework for SEO</>,
   },
   {
     slug: "devops",
     Component: SiLinux,
     title: "Server DevOps",
-    Description: () => (
-      <>
-        Streamlining software development and deployment through efficient
-        infrastructure management and automation
-      </>
-    ),
+    Description: () => <>Deployment & Management of Application on server</>,
   },
 ];

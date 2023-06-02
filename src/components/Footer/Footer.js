@@ -8,7 +8,7 @@ const Footer = () => {
   const today = new Date();
   const year = today.getFullYear();
   return (
-    <FooterWrapper>
+    <FooterWrapper id="footer">
       <LinkList>
         <LinkColumn>
           <LinkTitle>Chat</LinkTitle>

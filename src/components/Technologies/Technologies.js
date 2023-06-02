@@ -19,9 +19,9 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Skills</SectionTitle>
     <SectionText>
-      As a developer, I possess extensive experience working with a diverse
-      range of technologies. Throughout my journey, I have successfully
-      developed and maintained multiple projects utilizing these technologies.
+      As a developer, I possess extensive experience <b>working with a diverse
+      range of technologies</b>. Throughout my journey, I have successfully
+      <b> developed and maintained multiple projects </b>utilizing these technologies.
       However, my thirst for knowledge remains insatiable, as I am constantly
       driven to expand my skill set and embrace new learning opportunities.
     </SectionText>
@@ -29,7 +29,7 @@ const Technologies = () => (
       {Skills.map((Skill) => (
         <ListItem key={Skill.slug}>
           <picture>
-            <Skill.Component size="3rem" />
+            <Skill.Component size="3rem" style={{ fill: 'black' }} />
           </picture>
           <ListContainer>
             <ListTitle>{Skill.title}</ListTitle>
@@ -40,7 +40,7 @@ const Technologies = () => (
         </ListItem>
       ))}
     </List>
-    <SectionDivider colorAlt />
+    <SectionDivider divider />
   </Section>
 );
 
