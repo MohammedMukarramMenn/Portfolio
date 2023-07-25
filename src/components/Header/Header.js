@@ -19,17 +19,17 @@ const Header = () => (
   <Container>
     <Div1>
       <li>
-        <Link href="#projects" legacyBehavior>
+        <Link href="mukarram.in/#projects" legacyBehavior>
           <NavLink>Projects</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#skills" legacyBehavior>
+        <Link href="mukarram.in/#skills" legacyBehavior>
           <NavLink>Skills</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#about" legacyBehavior>
+        <Link href="mukarram.in/#about" legacyBehavior>
           <NavLink>About</NavLink>
         </Link>
       </li>
