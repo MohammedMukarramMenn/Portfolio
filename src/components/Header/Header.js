@@ -19,7 +19,7 @@ const Header = () => (
   <Container>
     <Div1>
       <li>
-        <Link href="https://uatportfolio.vercel.app/#projects" legacyBehavior>
+        <Link href="#projects" legacyBehavior>
           <NavLink>Projects</NavLink>
         </Link>
       </li>
