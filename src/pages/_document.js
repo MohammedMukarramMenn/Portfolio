@@ -44,6 +44,13 @@ export default class MyDocument extends Document {
             content="I'm Mohmmed Mukarram Menn, and I'm a full stack web developer. I'm passionate about crafting awesome applications and designs for the web. If you have a cool idea in mind, let's team up and bring it to life! Let's make something amazing together!"
           />
           <meta property="og:type" content="website" />
+          <meta property="og:title" content="Mohmmed Mukarram Menn - Full Stack Developer" />
+          <meta property="og:description" content="With a strong command of front-end, back-end & server technologies, [Your Name] delivers seamless web solutions with a focus on quality and client satisfaction. " />
+          <meta property="og:image" content="https://www.vipuljha.com/images/banner.png" />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:title" content="Mohmmed Mukarram Menn - Full Stack Developer" />
+          <meta property="twitter:description" content="Meet Mohmmed Mukarram Menn, a professional full stack web developer seeking freelance projects." />
+          <meta property="twitter:image" content="https://www.vipuljha.com/images/banner.png" />
           <meta
             property="og:title"
             content="Mohmmed Mukarram Menn - Full Stack Developer"
@@ -53,10 +60,13 @@ export default class MyDocument extends Document {
             content="With a strong command of front-end, back-end & server technologies, [Your Name] delivers seamless web solutions with a focus on quality and client satisfaction. "
           />
           <meta
-            property="og:image"
-            content="https://www.vipuljha.com/images/banner.png"
+            property="og:title"
+            content="Mohmmed Mukarram Menn - Full Stack Developer"
           />
-          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="og:description"
+            content="With a strong command of front-end, back-end & server technologies, [Your Name] delivers seamless web solutions with a focus on quality and client satisfaction. "
+          />
           <meta
             property="twitter:title"
             content="Mohmmed Mukarram Menn - Full Stack Developer"
@@ -64,10 +74,6 @@ export default class MyDocument extends Document {
           <meta
             property="twitter:description"
             content=" I'm Mohmmed Mukarram Menn, and I'm a full stack web developer. I'm passionate about crafting awesome applications and designs for the web. If you have a cool idea in mind, let's team up and bring it to life! Let's make something amazing together!"
-          />
-          <meta
-            property="twitter:image"
-            content="https://www.vipuljha.com/images/banner.png"
           />
           <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
