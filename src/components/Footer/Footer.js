@@ -12,7 +12,7 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Chat</LinkTitle>
-          <LinkItem href="https://wa.me/919594126533">Whatsapp</LinkItem>
+          <LinkItem href="https://wa.me/919594126533" target="_blank">Whatsapp</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
@@ -26,13 +26,13 @@ const Footer = () => {
           <Slogan>Copyright &copy; {year} <Link href="https://www.mukarram.in">  Mohmmed Mukarram Menn</Link>. All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/MohammedMukarramMenn">
+          <SocialIcons href="https://github.com/MohammedMukarramMenn" target="_blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/mohmmed-mukarram-menn-b308131b7">
+          <SocialIcons href="https://www.linkedin.com/in/mohmmed-mukarram-menn-b308131b7" target="_blank">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.instagram.com/mukarram_menn/">
+          <SocialIcons href="https://www.instagram.com/mukarram_menn/" target="_blank">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
           {/* <SocialIcons href="https://www.twitter.com/lordarcadius">

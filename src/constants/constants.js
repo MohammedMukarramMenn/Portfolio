@@ -42,21 +42,22 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2016, text: "Started my career with HTML & CSS." },
-  { year: 2017, text: "Learned Java at RST Forums" },
-  { year: 2018, text: "Created a project for rent data entry." },
-  { year: 2019, text: "Expanded my skills in Advanced Java." },
+  { year: 2018, text: "Started my career with HTML & CSS." },
+  {
+    year: 2019,
+    text: "Learned Java at RST Forums & Created a project for rent data entry.",
+  },
   {
     year: 2020,
-    text: "Worked as a freelancer and developed a society maintenance software.",
+    text: "Expanded my skills in Advanced Java by learning web applications using Spring & Hibernate",
   },
   {
     year: 2021,
-    text: "Took an internship at Demandesk and learned Node.js, React.js, and server deployment.",
+    text: "Worked as a freelancer and developed a society maintenance software.",
   },
   {
     year: 2022,
-    text: "Created admin panels, chatbots, and SMM management software.",
+    text: "Took an internship at Demandesk and learned Node.js, React.js, and server deployment, worked side by side on freelance projects.",
   },
   { year: 2023, text: "Year under progress...." },
 ];

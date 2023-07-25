@@ -18,14 +18,14 @@ export const Skills = [
     slug: "java",
     Component: DiJava,
     title: "Java",
-    Description: () => <>Android apps and Lambda functions</>,
+    Description: () => <>Desktop Applications</>,
   },
 
   {
     slug: "html",
     Component: DiHtml5,
     title: "HTML",
-    Description: () => <>Static webpages and portfolio projects</>,
+    Description: () => <>Static webpages</>,
   },
   {
     slug: "css",
@@ -44,7 +44,7 @@ export const Skills = [
     slug: "git",
     Component: SiGit,
     title: "Git",
-    Description: () => <>Code management and open source contributions</>,
+    Description: () => <>Code management & team collaborations</>,
   },
   {
     slug: "node",

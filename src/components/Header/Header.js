@@ -24,12 +24,12 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href="https://uatportfolio.vercel.app/#skills" legacyBehavior>
+        <Link href="#skills" legacyBehavior>
           <NavLink>Skills</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="https://uatportfolio.vercel.app/#about" legacyBehavior>
+        <Link href="#about" legacyBehavior>
           <NavLink>About</NavLink>
         </Link>
       </li>
@@ -57,13 +57,13 @@ const Header = () => (
       </li> */}
     {/* </Div2> */}
     <Div3>
-      <SocialIcons href="https://github.com/MohammedMukarramMenn">
+      <SocialIcons href="https://github.com/MohammedMukarramMenn" target="_blank">
         <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/mohmmed-mukarram-menn-b308131b7">
+      <SocialIcons href="https://www.linkedin.com/in/mohmmed-mukarram-menn-b308131b7" target="_blank">
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/mukarram_menn/">
+      <SocialIcons href="https://www.instagram.com/mukarram_menn/" target="_blank">
         <AiFillInstagram size="3rem" />
       </SocialIcons>
       {/* <SocialIcons href="https://www.twitter.com/lordarcadius">
