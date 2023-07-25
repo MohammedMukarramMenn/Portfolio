@@ -1,41 +1,61 @@
-import Link from 'next/link';
-import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
+import Link from "next/link";
+import React from "react";
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+} from "react-icons/ai";
+import {
+  Container,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  SocialIcons,
+} from "./HeaderStyles";
 
 const Header = () => (
   <Container>
     <Div1>
-      <Link
-        href="/"
-        style={{ display: 'flex', alignItems: 'center', color: "white" }}>
-
-        <img src="/logo.svg" height={40} width={40} /> <span style={{ marginLeft: 10, marginTop: 7, fontSize: 20 }} >Mohmmed Mukarram Menn</span>
-
-      </Link>
-    </Div1>
-    <Div2>
       <li>
-        <Link href="#projects" legacyBehavior>
+        <Link href="https://uatportfolio.vercel.app/#projects" legacyBehavior>
           <NavLink>Projects</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#skills" legacyBehavior>
+        <Link href="https://uatportfolio.vercel.app/#skills" legacyBehavior>
           <NavLink>Skills</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#about" legacyBehavior>
+        <Link href="https://uatportfolio.vercel.app/#about" legacyBehavior>
           <NavLink>About</NavLink>
         </Link>
       </li>
+      {/* <Link
+        href="/"
+        style={{ display: "flex", alignItems: "center", color: "white" }}
+      >
+        <span
+          style={{
+            marginLeft: 10,
+            marginTop: 7,
+            fontSize: 20,
+            color: "#000000",
+          }}
+        >
+          Mohmmed Mukarram Menn
+        </span>
+      </Link> */}
+    </Div1>
+    {/* <Div2> */}
       {/* <li>
         <a href="https://blog.vipuljha.com">
           <NavLink>Blog</NavLink>
         </a>
       </li> */}
-    </Div2>
+    {/* </Div2> */}
     <Div3>
       <SocialIcons href="https://github.com/MohammedMukarramMenn">
         <AiFillGithub size="3rem" />

@@ -7,7 +7,7 @@ import {
   Link,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
-import { LeftSection } from "./HeroStyles";
+import { LeftSection, LinkItem } from "./HeroStyles";
 
 const Hero = (props) => (
   <>
@@ -17,17 +17,19 @@ const Hero = (props) => (
           Hey there,
         </SectionTitle>
         <SectionText>
-          Meet Mohmmed Mukarram Menn, a professional full stack web developer
-          seeking freelance projects. With a strong command of front-end and
-          back-end technologies, Mukarram delivers seamless web solutions
-          with a focus on quality and client satisfaction. Harness their
-          expertise to bring your digital vision to life and achieve outstanding
-          results.
+          I'm <b>Mohmmed Mukarram Menn</b>, and I'm a{" "}
+          <b>Full-Stack Web Developer</b>. I'm passionate about crafting{" "}
+          <b>awesome applications and designs for the web</b>. If you have a
+          cool idea in mind, let's team up and bring it to life! Let's make
+          something amazing together!  
+          {/* <LinkItem href="#footer">Lets Connect!</LinkItem> */}
         </SectionText>
+        <br />
         <Button
           onClick={(e) => {
             e.preventDefault();
-            window.location.href = "/files/resume.pdf";
+            window.open("/files/resume.pdf", "_blank").focus();
+
           }}
         >
           My Resume

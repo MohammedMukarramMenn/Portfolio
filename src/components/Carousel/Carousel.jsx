@@ -1,53 +1,68 @@
-import React, { useState } from 'react';
-import styles from './Carousel.module.css';
+import React, { useState, useEffect } from "react";
+import styles from "./Carousel.module.css";
+import { BsChevronLeft, BsChevronRight, BsX } from "react-icons/bs";
 
 const Carousel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [startX, setStartX] = useState(0);
+  const [isFullScreen, setIsFullScreen] = useState(false);
 
-  const handleImageClick = (e) => {
-    const { offsetX } = e.nativeEvent;
-    if (offsetX < e.target.offsetWidth / 2) {
-      prevImage();
+  useEffect(() => {
+    const imageElement = document.querySelector(`.${styles.image}`);
+    imageElement.classList.remove(styles.fade);
+    void imageElement.offsetWidth; // Trigger reflow to restart the animation
+    imageElement.classList.add(styles.fade);
+
+    if (isFullScreen) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
     } else {
-      nextImage();
+      document.body.style.overflow = "auto"; // Enable scrolling
     }
+
+    return () => {
+      document.body.style.overflow = "auto"; // Restore scrolling when component unmounts
+    };
+  }, [currentImageIndex, isFullScreen]);
+
+  const goToNextImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const handleTouchStart = (e) => {
-    setStartX(e.touches[0].clientX);
+  const goToPreviousImage = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-  const handleTouchEnd = (e) => {
-    const { clientX } = e.changedTouches[0];
-    const deltaX = clientX - startX;
-    if (deltaX > 50) {
-      prevImage();
-    } else if (deltaX < -50) {
-      nextImage();
-    }
+  const openFullScreen = () => {
+    setIsFullScreen(true);
   };
 
-  const prevImage = () => {
-    const newIndex = (currentImageIndex - 1 + images.length) % images.length;
-    setCurrentImageIndex(newIndex);
-  };
-
-  const nextImage = () => {
-    const newIndex = (currentImageIndex + 1) % images.length;
-    setCurrentImageIndex(newIndex);
+  const closeFullScreen = () => {
+    setIsFullScreen(false);
   };
 
   return (
     <div className={styles.carousel}>
+      <button className={styles.arrowButton} onClick={goToPreviousImage}>
+        <BsChevronLeft className={styles.arrowIcon} />
+      </button>
       <img
         className={styles.image}
         src={images[currentImageIndex]}
         alt="Carousel Image"
-        onClick={handleImageClick}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
+        onClick={openFullScreen}
       />
+      {isFullScreen && (
+        <div className={styles.dialogBox}>
+          <div className={styles.dialogContent}>
+            <button className={styles.closeButton} onClick={closeFullScreen}>
+              <BsX className={styles.closeIcon} />
+            </button>
+            <img className={styles.fullScreenImage} src={images[currentImageIndex]} alt="Carousel Image" />
+          </div>
+        </div>
+      )}
+      <button className={styles.arrowButton} onClick={goToNextImage}>
+        <BsChevronRight className={styles.arrowIcon} />
+      </button>
     </div>
   );
 };
