@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
-          <link
+          {/* <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
@@ -80,7 +80,38 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
             crossOrigin="anonymous"
+          /> */}
+
+          <meta charset="UTF-8" />
+          <meta
+            name="title"
+            content="Mukarram Menn | Freelance Full Stack Developer in Mumbai"
           />
+          <meta
+            name="description"
+            content="Experienced Freelance Full Stack Developer in Mumbai. Delivering innovative web solutions. Hire me for your next project!"
+          />
+          <meta
+            name="keywords"
+            content="Mukarram Menn, Freelance Full Stack Developer in Mumbai"
+          />
+          <meta name="author" content="Mukarram Menn" />
+          <meta
+            property="og:description"
+            content="Experienced  Freelance Full Stack Developer in Mumbai. Delivering innovative web solutions. Hire me for your next project!"
+          />
+          <meta property="og:url" content="mukarram.in/" />
+          <meta name="distribution" content="global" />
+          <meta http-equiv="content-language" content="en-gb" />
+          <meta name="geo.region" content="IN-MH" />
+          <meta name="geo.placename" content="Mumbai" />
+          <meta name="robots" content="index, follow" />
+          <meta
+            property="og:title"
+            content="Mukarram Menn | Freelance Full Stack Developer in Mumbai"
+          />
+          <meta name="viewport" content="width=device-width,initial-scale=1" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         </Head>
         <body>
           <Main />
