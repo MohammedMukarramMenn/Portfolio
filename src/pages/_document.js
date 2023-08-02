@@ -31,10 +31,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
-          {/* <link
+          <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
+          {/*
           <meta
             name="title"
             content="Mohmmed Mukarram Menn - Full Stack Developer"
@@ -74,14 +75,14 @@ export default class MyDocument extends Document {
           <meta
             property="twitter:description"
             content=" I'm Mohmmed Mukarram Menn, and I'm a full stack web developer. I'm passionate about crafting awesome applications and designs for the web. If you have a cool idea in mind, let's team up and bring it to life! Let's make something amazing together!"
-          />
+          />*/}
+
           <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
             crossOrigin="anonymous"
-          /> */}
-
+          />
           <meta charset="UTF-8" />
           <meta
             name="title"
