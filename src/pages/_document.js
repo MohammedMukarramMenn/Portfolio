@@ -113,6 +113,7 @@ export default class MyDocument extends Document {
           />
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="google-site-verification" content="fXqnO4kt3Ca1PvjFkE3hFtfAgJKumZGh5LXq4Xa-6u4" />
         </Head>
         <body>
           <Main />
