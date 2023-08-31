@@ -84,6 +84,7 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <meta charset="UTF-8" />
+          <meta property="og:image" content="https://mukarram.in/avatar-hover.jpg" />
           <meta
             name="title"
             content="Mukarram Menn | Freelance Full Stack Developer in Mumbai"
